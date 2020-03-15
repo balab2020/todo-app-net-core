@@ -1,2 +1,6 @@
 /bin/*
 /obj/*
+/.vs/*
+/obj/*
+/obj/*
+/obj/project.assets.json
