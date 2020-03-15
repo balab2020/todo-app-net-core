@@ -7,8 +7,6 @@ namespace todo_app_net_core.model
     {
         public int Id { get; set; }
 
-        public Guid Guid { get; set; }
-
         public string Action { get; set; }
 
         public bool Completed { get; set; }

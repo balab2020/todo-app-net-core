@@ -52,6 +52,15 @@ namespace todo_app_net_core
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            //some middleware directly used here
+            app.Use(async (context, next) =>
+            {
+                // Do work that doesn't write to the Response.
+                await next.Invoke();
+                // Do logging or other work that doesn't write to the Response.
+            });
+
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
